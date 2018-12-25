@@ -8,4 +8,4 @@ With the EMF_METER class, you can measure the instantaneous, minimum, and maximu
 
 ## Necessary preparations:
 To ensure that this class is successful, make sure you have installed the Wire.h, Adafruit_ADS1015.h, Adafruit_GFX.h, and Adafruit_ILI9341.h libraries.
-Due to a lack of a "god" command in the ADS library, the code will NOT work if you re-include its library in addition to including the EMF_METER library in your test-code (see example code in repository).
+Due to a lack of a "Include Guard" the Adafruit ADS library, the code will NOT work if you re-include its library in addition to including the EMF_METER library in your test-code (see example code in repository).
