@@ -1,7 +1,10 @@
 # EMF_METER Class
 
 ## Purpose:
-This class is meant to use Adafruit's ADS_1x15, GFX, and other visual libraries to enable the EMF Meter to measure the voltage in a coil induced by moving magnets and graph the data on a TFT screen.
+This class is meant to enable users to measure and graph the voltage induced in wire coils due to moving magnetic fields.
+
+## What it provides:
+With the EMF_METER class, you can measure the instantaneous, minimum, and maximum voltages over time. You can also select which channel you take data from (channel 1 or channel 2). You can also customize the colors that each graph on the TFT screen appears as.
 
 ## Necessary preparations:
 To ensure that this class is successful, make sure you have installed the Wire.h, Adafruit_ADS1015.h, Adafruit_GFX.h, and Adafruit_ILI9341.h libraries.
