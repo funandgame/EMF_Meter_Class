@@ -45,6 +45,6 @@ class EMF_METER
     double getMin(int i);
     float getEMF(int i);
     void makeGrid();
-    void plotData(uint16_t color1,uint16_t color2);
+    void plotData(uint16_t color1,uint16_t color2, float scale);
 };
 #endif

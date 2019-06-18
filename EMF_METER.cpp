@@ -89,14 +89,14 @@ void EMF_METER :: makeGrid(){
     }
 }
 
-void EMF_METER :: plotData(uint16_t color1,uint16_t color2)
+void EMF_METER :: plotData(uint16_t color1,uint16_t color2, float scale)
 {
   ox = newox;
   oy = newoy;
   oy2 = newoy2;
-  
-  newoy = (uint16_t)(160 + scaleFactor *_emf);
-  newoy2 = (uint16_t)(160 + scaleFactor *_emf2);
+  scaleFactor=tft1.height()/(2*scale);
+  newoy = (uint16_t)(160 - scaleFactor *_emf);
+  newoy2 = (uint16_t)(160 - scaleFactor *_emf2);
   newox+=xStep;
   tft1.drawLine(ox, oy, newox, newoy, color1);
   tft1.drawLine(ox, oy2, newox, newoy2, color2);
