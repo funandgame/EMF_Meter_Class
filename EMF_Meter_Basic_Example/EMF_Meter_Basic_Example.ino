@@ -1,12 +1,3 @@
-//Prints the date and file
-void printtimedatefile()
-{
-  Serial.println(__DATE__);
-  Serial.println(__TIME__);
-  Serial.println(__FILE__);
-}
-
-
 // --- ADS Libraries and Declarations
 #include <Wire.h>
 #include <EMF_METER.h> //ADS library is inside the EMF_METER library
