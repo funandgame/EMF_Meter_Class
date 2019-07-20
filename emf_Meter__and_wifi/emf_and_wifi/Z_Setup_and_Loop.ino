@@ -38,7 +38,7 @@ void loop() {
   maxEMF=EMF.getMax(EMF_METER::CHAN_ONE);
 
   EMF.makeGrid();
-  EMF.plotData(ILI9341_RED,ILI9341_BLUE); //Graph function with parameters of two colors
+  EMF.plotData(ILI9341_RED,ILI9341_BLUE,512.0); //Graph function with parameters of two colors
   
   String DATA = (String)instEMF+","+(String)minEMF+","+(String)maxEMF;
   //WIFI_ONE.publishDataString(DATA, gngWiFi::D_SET4);
