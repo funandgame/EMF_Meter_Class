@@ -9,50 +9,10 @@ double instEMF,minEMF,maxEMF;
 
 WiFiClient espClient;
 PubSubClient client(espClient);
-//PI TOP INFO
-//HOME WIFI
-char* ssid = "kvlan2017";
-char* password = "covada6164";
-char* mqtt_server = "192.168.1.107";
 
-//ANNAPURNA HOTSPOT
-/*char* ssid = "Greybae";
-char* password = "aphotspotpass";
-char* mqtt_server = "172.20.10.6";*/
-
-//KUMAR HOTSPOT
-/*char* ssid = "KV HotspotX";
-char* password = "kvpass123";
-char* mqtt_server = "172.20.10.6";*/
-
-//SID HOTSPOT
-/*
-char* ssid = "SidMobHotspot";
-char* password = "sid12345";
-char* mqtt_server = "192.168.43.213";*/
-
-//RPI2July2019 INFO
-//HOME WIFI
-/*char* ssid = "kvlan2017";
-char* password = "covada6164";
-char* mqtt_server = "192.168.1.130";*/
-//SID HOTSPOT
-/*char* ssid = "SidMobHotspot";
-char* password = "sid12345";
-char* mqtt_server = "192.168.43.176";
-*/
-//RPI4 (RPIZeroJuly2019)
-//HOME WIFI
-/*char* ssid = "kvlan2017";
-char* password = "covada6164";
-char* mqtt_server = "192.168.1.122";
-*/
-
-//HOME WIFI
-/*char* ssid = "kvlan2017";
-char* password = "covada6164";
-char* mqtt_server = "192.168.1.130";
-*/
+char* ssid = "WiFi name";
+char* password = "WiFi Password";
+char* mqtt_server = "RPI IP address";
 
 //INSTANTIATE
 gngWiFi WIFI_ONE(espClient,client,ssid,password,mqtt_server);
